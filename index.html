@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <p>Drag the W3Schools image into the rectangle:</p> -->
+  <div class="cont">
+
+    <div class="drag1">
+      <h3>Drag Items From here</h3>
+
+      <img id="img" src="image/d.jpg" draggable="true" ondragstart="drag(event)"> <br>
+      <img id="img" src="image/fod.jpg" draggable="true" ondragstart="drag(event)"> <br>
+      <img id="img" src="image/ser.jpg" draggable="true" ondragstart="drag(event)">
+    
+    </div>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h3>Drop Items Here</h3>
+      
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
